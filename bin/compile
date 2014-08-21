@@ -1,4 +1,6 @@
 #!/usr/bin/env bash
 # bin/compile <build-dir> <cache-dir>
+ls -la "$@"
+find "$1" | xargs ls -al
 
 echo "-----> Nothing to do."
