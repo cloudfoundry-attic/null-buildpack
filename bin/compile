@@ -1,6 +1,8 @@
 #!/usr/bin/env bash
 # bin/compile <build-dir> <cache-dir>
-ls -la "$@"
-find "$1" | xargs ls -al
 
-echo "-----> Nothing to do."
+set -e -x
+
+echo "-----> Fixing permissions to deal with #77391824."
+cd $1
+chmod +x bin/start
