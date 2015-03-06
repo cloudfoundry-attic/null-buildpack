@@ -3,6 +3,9 @@
 
 set -e -x
 
-echo "-----> Fixing permissions to deal with #77391824."
 cd $1
-chmod +x bin/start
+
+[ -f bin/start ] && chmod +x bin/start
+[ -f bin/build ] && chmod +x bin/build
+
+[ -x bin/build ] && bin/build
