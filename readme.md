@@ -1,3 +1,9 @@
+## Deprecated
+
+This buildpack has been deprecated in favor of https://github.com/cloudfoundry/binary-buildpack
+
+----
+
 # Ø Buildpack
 
 Use Ø is ideal for executing statically compiled binaries or shell script on cloud foundry.
