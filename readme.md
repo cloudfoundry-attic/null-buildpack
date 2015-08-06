@@ -29,7 +29,7 @@ $ chmod +x ./start
 Push the app using the null-buildpack:
 
 ```bash
-$ cf push my-app --b https://github.com/cloudfoundry-incubator/null-buildpack/archive/master.zip --no-routes
+$ cf push my-app --b https://github.com/cloudfoundry-incubator/null-buildpack/archive/master.zip --no-route
 $ cf logs my-app
 ```
 
